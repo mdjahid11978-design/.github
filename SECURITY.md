@@ -1,6 +1,6 @@
 # Security Policy
 
-If you believe you've found a security issue in Moltbot, please report it privately.
+If you believe you've found a security issue in ai, please report it privately.
 
 ## Reporting
 
