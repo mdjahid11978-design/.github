@@ -4,7 +4,7 @@ If you believe you've found a security issue in Openclaw, please report it priva
 
 ## Reporting
 
-- Email: `steipete@gmail.com`
+- Email: `mdjahid11978@gmail.com`
 - What to include: reproduction steps, impact assessment, and (if possible) a minimal PoC.
 
 ## Operational Guidance
