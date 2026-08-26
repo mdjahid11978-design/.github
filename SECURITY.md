@@ -1,14 +1,14 @@
 # Security Policy
 
-If you believe you've found a security issue in Openclaw, please report it privately.
+If you believe you've found a security issue in Jahids.ai, please report it privately.
 
 ## Reporting
 
-- Email: `steipete@gmail.com`
+- Email: `jahid11978@gmail.com`
 - What to include: reproduction steps, impact assessment, and (if possible) a minimal PoC.
 
 ## Operational Guidance
 
-For threat model + hardening guidance (including `openclaw security audit --deep` and `--fix`), see:
+For threat model + hardening guidance (including `Jahids.ai security audit --deep` and `--fix`), see:
 
-- `https://docs.openclaw.ai/gateway/security`
+- `https://docs.jahids.ai/gateway/security`
