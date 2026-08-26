@@ -1,0 +1,54 @@
+name: JAHID Repository Branding
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview changes without writing"
+        required: true
+        default: true
+        type: boolean
+  schedule:
+    - cron: "17 2 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      JAHID_REPO_SYNC_TOKEN: ${{ secrets.JAHID_REPO_SYNC_TOKEN }}
+      ORIGINAL_REPOSITORIES: "jahids.ai,Jahid,Jahids"
+      MODIFIED_REPOSITORIES: ""
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || 'false' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check authorization
+        id: auth
+        shell: bash
+        run: |
+          if [[ -z "${JAHID_REPO_SYNC_TOKEN}" ]]; then
+            echo "authorized=false" >> "$GITHUB_OUTPUT"
+            echo "JAHID_REPO_SYNC_TOKEN is not configured; no repositories will be modified."
+          else
+            echo "authorized=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python
+        if: steps.auth.outputs.authorized == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        if: steps.auth.outputs.authorized == 'true'
+        run: python -m pip install -r requirements-branding.txt
+
+      - name: Synchronize repository presentation
+        if: steps.auth.outputs.authorized == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.JAHID_REPO_SYNC_TOKEN }}
+        run: python scripts/sync_repository_branding.py
