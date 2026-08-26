@@ -1,48 +1,33 @@
 # JAHIDS.AI
 
 <p align="center">
-  <strong>JAHIDS.AI</strong><br/>
+  <strong>JAHIDS.AI</strong><br>
   AI · Agents · Assistants · Systems · Engineering
 </p>
 
-<p align="center">
-  <strong>BUILT BY JAHID</strong>
-</p>
+<p align="center"><strong>BUILT BY JAHID</strong></p>
 
 [![Owner](https://img.shields.io/badge/BUILT%20BY-JAHID-orange)](https://github.com/mdjahid11978-design)
 [![Platform](https://img.shields.io/badge/Platform-JAHIDS.AI-black)](https://github.com/mdjahid11978-design/jahids.ai)
 
 ## About
 
-JAHIDS.AI is the canonical platform for Jahid's AI systems, agents, assistants, tools, memory, automation, research and engineering projects.
+JAHIDS.AI is the canonical platform for Jahid's original AI systems, agents, assistants, tools, memory, automation, research, and engineering work.
+
+The GitHub account also contains independent upstream repositories, forks, experiments, documentation projects, and imported projects. Each repository keeps its own technical and legal identity.
 
 ## Repository standard
 
-Projects use a consistent presentation while preserving the technical and legal identity of each upstream project.
+Repositories should use a consistent Markdown structure where it fits the project:
 
-### Project attribution
-
-- **Original Jahid project** — `BUILT BY JAHID`
-- **Jahid modification or fork** — `ADAPTED & MAINTAINED BY JAHID`
-- **Upstream project** — `MAINTAINED BY JAHID · UPSTREAM ATTRIBUTION PRESERVED`
-- **Third-party component** — original license, copyright and attribution remain intact
-- **JAHIDS.AI project** — JAHIDS.AI governance, ownership and provenance records apply
-
-## Standard repository sections
-
-Where applicable, repositories should provide:
-
-- Overview
-- Features
+- Overview and status
+- Features and capabilities
 - Architecture
-- AI / Agents / Skills / Tools
-- Installation
-- Configuration
-- Usage
-- API
+- AI / agents / skills / tools
+- Installation and configuration
+- Usage and API
 - Project structure
 - Security
-- Governance
 - Testing
 - Deployment
 - Documentation
@@ -52,9 +37,21 @@ Where applicable, repositories should provide:
 - Third-party attribution
 - Ownership and provenance
 
+See [`REPOSITORY_STANDARD.md`](https://github.com/mdjahid11978-design/.github/blob/main/REPOSITORY_STANDARD.md).
+
+## Attribution classes
+
+- **Original Jahid project** — `BUILT BY JAHID`
+- **Jahid modification or fork** — `ADAPTED & MAINTAINED BY JAHID`
+- **Upstream project** — `MAINTAINED BY JAHID · UPSTREAM ATTRIBUTION PRESERVED`
+- **Third-party component** — original license, copyright, and attribution remain intact
+- **JAHIDS.AI project** — JAHIDS.AI governance and provenance records apply
+
 ## Legal and provenance rule
 
-Branding does not transfer copyright or replace upstream licenses. Forks and imported projects retain their original legal notices. Ownership claims apply only to original material or clearly identified modifications.
+Branding does not transfer copyright or replace upstream licenses. Repository ownership does not automatically establish ownership of third-party code, models, datasets, documentation, assets, or trademarks.
+
+Project claims should be supported by repository history, license records, provenance records, or other appropriate evidence.
 
 ## Canonical platform
 
