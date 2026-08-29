@@ -1,5 +1,11 @@
 <div align="center">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mdjahid11978-design/jahids.ai/main/assets/jahids-ai-banner.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mdjahid11978-design/jahids.ai/main/assets/jahids-ai-banner.svg">
+  <img src="https://raw.githubusercontent.com/mdjahid11978-design/jahids.ai/main/assets/jahids-ai-banner.svg" alt="JAHIDS.AI repository banner" width="100%">
+</picture>
+
 # {{PROJECT_NAME}}
 
 ### {{PROJECT_TAGLINE}}
@@ -8,19 +14,29 @@
 
 [![Built by Jahid](https://img.shields.io/badge/BUILT%20BY-JAHID-f5a623)](https://github.com/mdjahid11978-design)
 [![JAHIDS.AI](https://img.shields.io/badge/JAHIDS.AI-CANONICAL-111827)](https://github.com/mdjahid11978-design/jahids.ai)
+[![Status](https://img.shields.io/badge/status-{{STATUS}}-2f81f7)](#status)
 [![License](https://img.shields.io/badge/license-{{LICENSE}}-green)](./LICENSE)
 
 </div>
 
 ---
 
-## Overview
+## Project identity
 
-{{PROJECT_DESCRIPTION}}
+| | Value |
+|---|---|
+| **Project** | `{{PROJECT_NAME}}` |
+| **Purpose** | {{PROJECT_DESCRIPTION}} |
+| **Classification** | `{{CLASSIFICATION}}` |
+| **Status** | `{{STATUS}}` |
+| **Builder / Maintainer** | `{{BUILDER_OR_MAINTAINER}}` |
+| **License** | `{{LICENSE}}` |
 
 ## Status
 
 `{{STATUS}}`
+
+Describe what is implemented, what CI verifies, and what remains planned. Do not label architecture-only work as production-ready.
 
 ## Features
 
@@ -34,9 +50,16 @@
 INPUT → CONTEXT → INTELLIGENCE → AGENT → CAPABILITY → POLICY → EXECUTION → VERIFICATION → AUDIT
 ```
 
+Add a repository-specific diagram when it improves understanding.
+
 ## AI / Agents / Skills / Tools
 
-Document the capabilities that actually exist in this repository. Separate implemented, experimental, and planned features.
+Document capabilities that actually exist in this repository. Separate:
+
+- Implemented
+- Experimental
+- Configured but unverified
+- Planned
 
 ## Installation
 
@@ -50,7 +73,7 @@ Document the capabilities that actually exist in this repository. Separate imple
 # Replace with repository-specific commands.
 ```
 
-## Project Structure
+## Project structure
 
 ```text
 {{REPOSITORY_STRUCTURE}}
@@ -60,13 +83,19 @@ Document the capabilities that actually exist in this repository. Separate imple
 
 Model output is untrusted input. Protected actions must pass the repository's authorization, capability, policy, risk, and verification controls.
 
-## Testing
+See [SECURITY.md](./SECURITY.md) when present.
 
-Document the commands used to verify this repository and distinguish tests that pass in CI from tests that have not been run.
+## Testing and verification
+
+```bash
+# Replace with repository-specific verification commands.
+```
+
+Record which checks CI actually executes. A badge represents the workflow that produced it; it does not represent capabilities that workflow did not test.
 
 ## Deployment
 
-Document build, artifact, environment promotion, health checks, rollback, and operational requirements where applicable.
+Document build, artifact creation, environment promotion, health checks, rollback, and operational requirements where applicable.
 
 ## Documentation
 
@@ -86,24 +115,25 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 This repository's license is `{{LICENSE}}`. Do not replace an upstream license when this repository contains third-party or forked material.
 
-## Third-Party Attribution
+## Third-party attribution
 
 Preserve upstream copyright notices, licenses, trademarks, and attribution requirements. Account branding does not transfer rights in third-party material.
 
-## Ownership & Provenance
+## Ownership and provenance
 
-Use one of these classifications where applicable:
+Use the correct classification:
 
 - `BUILT BY JAHID` — original work created in this repository.
 - `ADAPTED & MAINTAINED BY JAHID` — substantial Jahid modifications to an existing project.
 - `MAINTAINED BY JAHID · UPSTREAM ATTRIBUTION PRESERVED` — upstream project retained with maintenance changes.
+- `IMPORTED / DOCUMENTATION` — source identity and licensing remain visible.
 
-See the account repository standard for the evidence requirements.
+See the account repository standard for evidence requirements.
 
 ---
 
 <div align="center">
 
-**BUILT BY JAHID**  ·  **JAHIDS.AI**
+**{{PROJECT_NAME}}**  ·  **{{CLASSIFICATION}}**  ·  **JAHIDS.AI**
 
 </div>
