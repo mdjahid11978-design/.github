@@ -1,14 +1,21 @@
 # Security Policy
 
-If you believe you've found a security issue in Jahids.ai, please report it privately.
+Owner: Jahid
 
-## Reporting
+Security Contact:
+jahid11978@outlook.com
 
-- Email: `jahid11978@gmail.com`
-- What to include: reproduction steps, impact assessment, and (if possible) a minimal PoC.
+Platform:
+JAHIDS.AI
 
-## Operational Guidance
+Report all vulnerabilities directly to the owner.
 
-For threat model + hardening guidance (including `Jahids.ai security audit --deep` and `--fix`), see:
+## Supported Versions
 
-- `https://docs.jahids.ai/gateway/security`
+Security updates are provided for the latest version.
+
+## Reporting a Vulnerability
+
+To report a security vulnerability, please contact jahid11978@outlook.com directly.
+
+Do not open a public issue for security vulnerabilities.
